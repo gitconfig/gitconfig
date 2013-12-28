@@ -1,17 +1,22 @@
 [user]
     name = Firstname Lastname
     email = firstname.lastname@example.com
- 
 [alias]
-    st = status
-    ci = commit
     br = branch
+    bra = branch -a
+    ci = commit
     co = checkout
+    cim = commit -m
     df = diff
-    lg = log -p
-    unc = reset --soft HEAD^
-    pom = push origin master
     la = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
- 
+    lg = log -p
+    ls = ls-files
+    pom = push origin master
+    st = status
+    unc = reset --soft HEAD^
+    unstage = reset HEAD --
 [color]
     ui = auto
+[core]
+    excludesfile = ~/.gitignore_global
+    pager = less -R
