@@ -2,7 +2,7 @@
     name = Firstname Lastname
     email = firstname.lastname@example.com
 [alias]
-    br = branch
+    br = "!git for-each-ref --format='%(committerdate:short),%(authorname),%(refname:short)' --sort=committerdate refs/heads/ | column -t -s ','"
     bra = branch -a
     ci = commit
     co = checkout
