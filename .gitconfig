@@ -7,7 +7,8 @@
     ci = commit
     co = checkout
     cim = commit -m
-    df = diff
+    # Highlight trailing whitespace in diffs
+    df = diff --ws-error-highlight
     i = update-index --assume-unchanged
     l = git log --oneline --graph --decorate
     lg = log -p
