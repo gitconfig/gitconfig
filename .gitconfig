@@ -25,3 +25,7 @@
 [core]
     excludesfile = ~/.gitignore_global
     pager = less -R
+[merge]
+  conflictstyle = diff3
+  # Setup your merge tool here. This will allow you to see visual diffs with `git mergetool` or `git difftool`
+  tool = meld
