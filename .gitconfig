@@ -11,7 +11,7 @@
     df = diff --ws-error-highlight=new,old
     dfs = diff --staged --ws-error-highlight=new,old
     i = update-index --assume-unchanged
-    l = git log --oneline --graph --decorate
+    l = log --oneline --graph --decorate
     lg = log -p
     ls = ls-files
     pom = push origin master
