@@ -7,8 +7,8 @@
     ci = commit
     co = checkout
     cim = commit -m
-    # Highlight trailing whitespace in diffs
-    df = diff --ws-error-highlight=new,old
+    # Show minimal diffs instead of whole lines changed and highlight trailing whitespace in diffs
+    df = diff --color-words=. --ws-error-highlight=new,old
     dfs = diff --staged --ws-error-highlight=new,old
     i = update-index --assume-unchanged
     l = git log --oneline --graph --decorate
