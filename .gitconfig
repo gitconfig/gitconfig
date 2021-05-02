@@ -13,7 +13,7 @@
     # Find a string but omit strings with lendth over 400 chars
     find = "!f() { str=${@}; echo $str; git grep -E -e$str --and --not -e '.{400}'; }; f"
     i = update-index --assume-unchanged
-    l = git log --oneline --graph --decorate
+    l = log --oneline --graph --decorate
     lg = log -p
     ls = ls-files
     pom = push origin master
