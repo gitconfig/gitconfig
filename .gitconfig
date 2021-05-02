@@ -22,7 +22,7 @@
     po = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
     st = status
     # stash unstaged only
-    stuo = "!f() { git stash; git stash -u; git stash pop stash@{1}; }; f"
+    stuo = "!f() { git stash save --keep-index "Unstaged only" && git stash save "Staged only" && git stash pop && git add . --all && git status; }; f"
     # uncommit last
     unc = reset --soft HEAD^
     unstage = reset HEAD --
