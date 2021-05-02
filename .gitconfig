@@ -2,6 +2,7 @@
     name = Firstname Lastname
     email = firstname.lastname@example.com
 [alias]
+    # list branches ordered by change time
     br = "!git for-each-ref --format='%(committerdate:short),%(authorname),%(refname:short)' --sort=committerdate refs/heads/ | column -t -s ','"
     bra = branch -a
     ci = commit
@@ -20,6 +21,9 @@
     # push current branch
     po = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
     st = status
+    # stash unstaged only
+    stuo = "!f() { git stash; git stash -u; git stash pop stash@{1}; }; f"
+    # uncommit last
     unc = reset --soft HEAD^
     unstage = reset HEAD --
 [color]
