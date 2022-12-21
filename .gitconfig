@@ -32,9 +32,9 @@
     excludesfile = ~/.gitignore_global
     pager = less -R
 [merge]
-  conflictstyle = diff3
-  # Setup your merge tool here. This will allow you to see visual diffs with `git mergetool` or `git difftool`
-  tool = meld
+    conflictstyle = diff3
+    # Setup your merge tool here. This will allow you to see visual diffs with `git mergetool` or `git difftool`
+    tool = meld
 [rebase]
-  # Display authors on rebase -i
-  instructionFormat = (%an <%ae>) %s
+    # Display authors on rebase -i
+    instructionFormat = (%an <%ae>) %s
