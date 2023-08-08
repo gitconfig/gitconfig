@@ -1,6 +1,6 @@
 [user]
-    name = Firstname Lastname
-    email = firstname.lastname@example.com
+    name = KatherinBIP
+    email = katherin.salazar@bip-group.com
 [alias]
     # list branches ordered by change time
     br = "!git for-each-ref --format='%(committerdate:short),%(authorname),%(refname:short)' --sort=committerdate refs/heads/ | column -t -s ','"
