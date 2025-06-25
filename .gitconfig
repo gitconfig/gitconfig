@@ -7,6 +7,8 @@
     bra = branch -a
     ci = commit
     co = checkout
+    # clean whitespace in staged files
+    clws = "!f() { git diff --cached --name-only | xargs sed -i \"\" -E \"s/[[:space:]]+$//\"; }; f"
     cim = commit -m
     # Show minimal diffs instead of whole lines changed and highlight trailing whitespace in diffs
     df = diff --color-words=. --ws-error-highlight=new,old
